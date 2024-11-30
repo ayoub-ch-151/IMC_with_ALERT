@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Calculateur d'IMC"
+        android:textColor="#3F51B5"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veuillez entrer votre poids en kilogrammes, puis votre taille en mètres."
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Poids (en kilogrammes)"
+        android:inputType="numberDecimal"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taille (en mètres)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/calbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculer l'IMC"
+        android:textColor="#FFFFFF"
+
+        android:backgroundTint="#3F51B5"
+        android:padding="12dp" />
+
+</LinearLayout>
